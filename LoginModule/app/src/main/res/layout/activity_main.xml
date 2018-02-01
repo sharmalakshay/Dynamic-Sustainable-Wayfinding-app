@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ase.lsharma.loginmodule.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Login:" />
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/loginemail"
+            android:layout_alignLeft="@+id/loginemail"
+            android:layout_alignRight="@+id/loginemail"
+            android:layout_alignStart="@+id/loginemail"
+            android:layout_below="@+id/loginemail"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/loginbtn"
+            android:layout_marginTop="40dp"
+            android:text="Using first time? Sign up:"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/signupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loginbtn"
+            android:layout_alignStart="@+id/loginbtn"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/signupemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/signupname"
+            android:layout_alignLeft="@+id/signupname"
+            android:layout_alignRight="@+id/signupname"
+            android:layout_alignStart="@+id/signupname"
+            android:layout_below="@+id/signupname"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/signuppassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/signupemail"
+            android:layout_alignLeft="@+id/signupemail"
+            android:layout_alignRight="@+id/signupemail"
+            android:layout_alignStart="@+id/signupemail"
+            android:layout_below="@+id/signupemail"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/signuppassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/signuppassword"
+            android:layout_alignLeft="@+id/signuppassword"
+            android:layout_alignRight="@+id/signuppassword"
+            android:layout_alignStart="@+id/signuppassword"
+            android:layout_below="@+id/signuppassword"
+            android:ems="10"
+            android:hint="Repeat Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/signuppassword2"
+            android:layout_alignLeft="@+id/signuppassword2"
+            android:layout_alignRight="@+id/signuppassword2"
+            android:layout_alignStart="@+id/signuppassword2"
+            android:layout_below="@+id/signuppassword2"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/guestbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:text="Guest login" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/loginpassword"
+            android:layout_alignLeft="@+id/loginpassword"
+            android:layout_alignRight="@+id/loginpassword"
+            android:layout_alignStart="@+id/loginpassword"
+            android:layout_below="@+id/loginpassword"
+            android:text="Login" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
